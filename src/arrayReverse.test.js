@@ -48,7 +48,7 @@ describe(`Function 'arrayReverse':`, () => {
     expect(arrayReverse([...input])).toEqual(expected);
   });
 
-  test('maintains original string lengths after reversal', () => {
+  test('maintains original string lengths after reversal.', () => {
     const input = ['one', 'two', 'three'];
     const output = arrayReverse([...input]);
 
