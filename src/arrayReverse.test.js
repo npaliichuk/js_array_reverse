@@ -33,8 +33,9 @@ describe(`Function 'arrayReverse':`, () => {
   test('works correctly when length strings including characters', () => {
     const input = ['I', 'am', 'a', 'student!'];
     const expected = ['!', 'tn', 'e', 'dutsamaI'];
+    const result = arrayReverse(input);
 
-    expect(arrayReverse([...input])).toEqual(expected);
+    expect(result).toEqual(expected);
   });
 
   test('returns empty array when input is empty', () => {
@@ -43,9 +44,10 @@ describe(`Function 'arrayReverse':`, () => {
 
   test('works correctly with special characters and numbers', () => {
     const input = ['abc123', '!@#$', 'xyz'];
-    const expected = ['zyx$#@', '!321', 'cba']; // matches broken logic
+    const expected = ['zyx$#@', '!321', 'cba'];
+    const result = arrayReverse(input);
 
-    expect(arrayReverse([...input])).toEqual(expected);
+    expect(result).toEqual(expected);
   });
 
   test('maintains original string lengths after reversal.', () => {
