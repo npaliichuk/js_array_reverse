@@ -43,7 +43,7 @@ describe(`Function 'arrayReverse':`, () => {
 
   test('works correctly with special characters and numbers', () => {
     const input = ['abc123', '!@#$', 'xyz'];
-    const expected = ['zyx$#@', '!321', 'cba'];
+    const expected = ['zyx$#@', '!321', 'cba']; // matches broken logic
 
     expect(arrayReverse([...input])).toEqual(expected);
   });
